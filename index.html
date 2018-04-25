@@ -6,6 +6,16 @@
         [data-dvt="bird"] {
             background: plum;
         }
+
+        input[type=checkbox]+label {
+            color: #ccc;
+            font-style: italic;
+        }
+
+        input[type=checkbox]:checked+label {
+            color: #f00;
+            font-style: normal;
+        }
     </style>
 </head>
 
@@ -16,6 +26,11 @@
         <li onclick="showDetails(this)" id="fish" data-dvt="fish">fish</li>
         <li onclick="showDetails(this)" id="spider" data-dvt="spider">spider</li>
     </ul>
+
+    <br />
+
+    <input type="checkbox" id="ossm" name="ossm">
+    <label for="ossm">CSS is Awesome</label>
 
 </body>
 
